@@ -1,0 +1,44 @@
+.about-section {
+  display: flex;
+  align-items: stretch; /* Make sure both the text and image are the same height */
+  justify-content: space-between; /* Ensure even spacing between text and image */
+  padding: 60px;
+  background-color: #002147; /* Dark blue */
+  color: #fff;
+  min-height: 100vh; /* Ensure full viewport height */
+  box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.about-section h2 {
+  color: #ffcc00; /* Yellow */
+  font-size: 48px; /* Large font size for the heading */
+  margin-bottom: 30px;
+}
+
+.about-section .about-content {
+  max-width: 50%; /* Ensure the text content takes up half the width */
+  line-height: 1.8;
+  text-align: justify; /* Justify the text for better alignment */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the text */
+}
+
+.about-section p {
+  margin-bottom: 30px;
+  font-size: 18px; /* Increase the font size for better readability */
+}
+
+.about-section .images {
+  margin-left: 40px;
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  display: flex;
+  align-items: center; /* Vertically center the image */
+}
+
+.about-section .images img {
+  width: 500px; /* Adjust the width for better proportions */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for a 3D effect */
+}
