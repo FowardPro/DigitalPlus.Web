@@ -5,13 +5,13 @@ import MissionSection from './MissionSection';
 import CoreValuesSection from './CoreValuesSection';
 import ServicesSection from './ServicesSection';
 import Footer from './Footer';
-import './AboutPage.css';
+import styles from './AboutPage.module.css';
 
 const AboutPage = () => {
   return (
     <div>
       <Header />
-      <div className="main-content">
+      <div className={styles['main-content']}>
         <AboutSection />
         <MissionSection />
         <CoreValuesSection />

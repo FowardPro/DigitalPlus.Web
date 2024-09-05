@@ -1,15 +1,15 @@
 import React from 'react';
-import './Header.css';
 import { Link } from 'react-router-dom';
-import logo from '../../Assets/TUT_Logo_Transparent.png'; // Adjust the path as necessary
+import styles from './Header.module.css';  // Import the CSS module
+import logo from '../../Assets/TUT_Logo_Transparent.png';  // Adjust the path as necessary
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="logo">
+    <header className={styles.header}>
+      <div className={styles.logo}>
         <img src={logo} alt="TUT Logo" />
       </div>
-      <div className="nav">
+      <div className={styles.nav}>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>

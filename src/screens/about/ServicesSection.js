@@ -1,9 +1,9 @@
 import React from 'react';
-import './ServicesSection.css';
+import styles from './ServicesSection.module.css'; 
 
 const ServicesSection = () => {
   return (
-    <section className="services-section">
+    <section className={styles.servicesSection}>
       <h2>SERVICES</h2>
       <ul>
         <li>Key Possession Notification</li>
